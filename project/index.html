@@ -1,15 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mariam Eldor - Certified Life Coach | Transform Your Life</title>
-    <meta name="description" content="Professional life coaching services with Your Name. Book your free consultation and start your transformation journey today. 95% success rate, 500+ clients helped.">
-    <meta name="keywords" content="life coach, personal development, goal setting, career coaching, transformation, Your City">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HealthTrack - Personal Wellness Tracking Application">
+    <meta name="keywords" content="fitness, nutrition, wellness, health, tracking">
+    <meta name="author" content="uniifali">
+    <title>HealthTrack - Personal Wellness Tracking</title>
+    <script type="module" src="./src/main.jsx"></script>
+
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="HealthTrack - Personal Wellness Tracking">
+    <meta property="og:description" content="Track your fitness activities and nutrition with our comprehensive wellness platform">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://uniifali.github.io/HealthTrackFitness">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HealthTrack - Personal Wellness Tracking">
+    <meta name="twitter:description" content="Track your fitness activities and nutrition with our comprehensive wellness platform">
+    
+    <!-- Google Fonts (if needed) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Base styles -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #f8fafc;
+      }
+      
+      #root {
+        min-height: 100vh;
+      }
+      
+      /* Loading spinner styles */
+      .loading-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #dbeafe 0%, #f3e8ff 100%);
+      }
+      
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #e0e7ff;
+        border-top: 5px solid #4f46e5;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <noscript>
+      <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+        <h1>HealthTrack</h1>
+        <p>You need to enable JavaScript to run this application.</p>
+        <p>Please enable JavaScript in your browser settings and reload the page.</p>
+      </div>
+    </noscript>
+    
+    <div id="root">
+      <!-- Loading spinner while React loads -->
+      <div class="loading-container">
+        <div class="loading-spinner"></div>
+      </div>
+    </div>
+    
+    <!-- Google Analytics (optional) -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    -->
   </body>
 </html>
